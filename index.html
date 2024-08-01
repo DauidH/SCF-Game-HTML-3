@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <title>💥😾¡STREET CAT FIGHTER!😾💥</title>
+        <link rel="stylesheet" href="./assets/css/styles.css">
+    </head>
+    <body>
+        <h1 class="titulo">
+            <img src="./assets/imgs/logo.png" alt="💥😾¡STREET CAT FIGHTER!😾💥">
+        </h1>
+        <h2 class="jerarquia">
+            <img src="./assets/imgs/jerarquia.png" alt="jerarquia">
+        </h2>
+
+        <section id="seleccionar-mascota">
+            <h2 id="h2" class="subtitulo">¡Selecciona a tu luchador!</h2>
+
+            <div id="contenedor-tarjetas" class="tarjetas">                
+            </div>
+
+            <button id="boton-mascota">Seleccionar</button>
+
+        </section>
+
+        <section id="ver-mapa">
+            <h1 class="titulo">¡Recorre el mapa con tu luchador!</h1>
+            <canvas id="mapa"></canvas>
+            <button id="boton-arriba" >↑</button>
+            <div>
+                <button id="boton-izquierda" >←</button>
+                <button id="boton-abajo" >↓</button>
+                <button id="boton-derecha" >→</button>
+            </div>
+        </section>
+
+        <section id="seleccionar-ataque">
+            <h2 class="subtitulo">Elige tu ataque:</h2>
+
+            <div id="contenedor-ataques" class="botones">
+            </div>
+            
+            <section id="messages">
+                <section id="cuadros">
+                    <div class="ataques">
+                        <p id="ataques-del-jugador"></p>
+                        <p id="vs"></p>
+                        <p id="ataques-del-enemigo"></p>           
+                    </div>
+                </section>
+
+                <section id="mensajes">
+                    <p id="resultado"></p>
+                </section>
+            </section>
+
+            <section id="reiniciar">
+                <div id="mensaje-final">
+                    <button id="boton-reiniciar"></button>
+                    <p id="mensaje-final-inner"></p>
+                </div>
+            </section>
+                        
+            <div class="combate">
+                <div id="personajes-combate">
+                </div>
+
+                <div id="personajes-combate-img">
+                </div>
+
+                <div class="vidas">
+                    <p id="jugador"><span id="mascota-jugador"></span> tiene <span id="vidas-jugador">0</span> <span id="singular-vidas-jugador">victorias</span> <span id="corazones-jugador"></span></p>
+
+                    <p id="enemigo"><span id="mascota-enemigo"></span> tiene <span id="vidas-enemigo">0</span> <span id="singular-vidas-enemigo">victorias</span> <span id="corazones-enemigo"></span></p>
+                </div>
+            </div>
+            <img class="img-historial" src=".\assets\imgs\historial.png" alt="Historial">
+            <section id="historial">
+                    <div id="ronda-1" class="fila"></div>
+                    <div id="ronda-2" class="fila"></div>
+                    <div id="ronda-3" class="fila"></div>
+                    <div id="ronda-4" class="fila"></div>
+                    <div id="ronda-5" class="fila"></div>
+            </section>
+            <section id="imgs-ataques" class="ataques-invisibles">
+            </section>
+        </section>
+
+        <section id="gracias-finales">
+            <div id="imagenes-gracias-finales">
+            </div>
+        </section>
+
+        <script src="./assets/js/mokepon.js"></script>
+    </body>
+</html>

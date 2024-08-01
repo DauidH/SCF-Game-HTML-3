@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sahitya:wght@400;700&display=swap');
+
+body {
+    font-family: 'Cinzel', serif;
+    background-color: #DAC0A3;
+    align-content: space-between;
+    background-image: url("../imgs/fondo.gif");
+    background-repeat: repeat;
+    background-size: 112%; 
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    margin: 0px;
+    display: flex;
+    color: #EADBC8;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo img {
+    width: 295px;
+}
+
+.jerarquia img {
+    top: 7vw;
+    left: 67vw;
+    width: 7em;
+    position: absolute;
+}
+
+.subtitulo {
+    color: #EADBC8;
+    margin-bottom: 25px;
+}
+
+.tarjetas, .botones {
+    display: flex;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.tarjeta-de-mokepon {
+    width: 180px;
+    height: 300px;
+/*     background: rgba(94, 72, 45, 0.9); */
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    color: #F8F0E5;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+}
+
+#tarjeta-gatung-fu img {
+    height: 212px;
+    width: 152px;
+}
+
+#tarjeta-sheriff-cat img {
+    height: 227px;
+    width:173.08px;
+}
+
+#tarjeta-cat-sparrow img {
+    height: 235px;
+    width: 150px;
+}
+
+#tarjeta-gathofen img {
+    height: 225px;
+    width: 121px;
+}
+
+#tarjeta-catminator img {
+    height: 211px;
+    width: 151px;
+}
+
+#tarjeta-catkingo img {
+    height: 211px;
+    width: 180px;
+}
+
+#boton-mascota {
+    background-color: rgba(66, 62, 39, 0.1);
+    font-family: 'Cinzel', sans-serif;
+    color: white;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 30px 0px 15px 0px;
+}
+
+button:hover {
+    background: #785f43;
+    color: #ffffff;
+    box-shadow: 0px 0px 5px 0px #ffffff;
+}
+
+input {
+    display: none;
+}
+
+input:hover+label {
+    background: linear-gradient(0deg,rgba(143, 1, 1, 0.531),#ffffff00);
+    color: #ffffff;
+    font-size: larger;
+    white-space: nowrap;
+}
+
+input:checked+label {
+    white-space: nowrap;
+    background: linear-gradient(0deg,rgb(0, 0, 0),rgba(143, 1, 1, 0.531));
+    color: #ffffff;
+    box-shadow: 0px 0px 20px 0px #ffffff;
+    font-size: larger;
+    border: 4px solid rgba(255, 255, 255, 0.7);
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: rgba(66, 62, 39, 0.9);
+    font-family: 'Cinzel', sans-serif;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#messages {
+    color:white;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 339px;
+    height: 193px;
+    margin-top: 20px;
+    border-radius: 20px;
+    z-index: 19;
+}
+
+.ataques {
+    display: flex;
+    gap: 3px;
+}
+
+#ataques-del-jugador {
+    white-space: nowrap;
+    display: flex;
+    width: 105px;
+    background-color: rgb(58 58 58 / 100%);
+    padding: 4px;
+    margin-top: 20px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+#vs {
+    display: flex;
+    width: 0px;
+    height: 0px;
+    background-color: rgb(58 58 58 / 100%);
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#ataques-del-enemigo {
+    white-space: nowrap;
+    display: flex;
+    width: 105px;
+    background-color: rgb(58 58 58 / 100%);
+    padding: 4px;
+    margin-top: 20px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+#g {
+    margin-bottom: 0px;
+}
+
+#mensajes {
+    width: 202px;
+    background-color: rgb(58 58 58 / 100%);
+    padding: 20px;
+    margin-top: -7px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#mensaje-final {
+    width: 180px;
+    background: linear-gradient(0deg, rgb(0, 0, 0), rgba(143, 1, 1, 0.53));
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    z-index: 19;
+    border: 4px solid rgba(255, 255, 255, 0.7);
+    color: white;
+}
+
+#boton-reiniciar {
+    background-color: rgba(48, 47, 42);
+    font-family: 'Cinzel', sans-serif;
+    color: white;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton-reiniciar:hover {
+    background-color: #785f43;
+    color: #ffffff;
+    box-shadow: 0px 0px 5px 0px #ffffff;
+}
+
+.combate {
+    white-space: nowrap;
+    width: 700px;
+    font-family: 'Cinzel', sans-serif;
+    color: white;
+    position: absolute;
+    margin: 135px 0px 0px 0px;
+}
+
+#personajes-combate {
+    display: flex;
+    justify-content: center;
+    gap: 450px;
+}
+
+#personajes-combate-img {
+    display: flex;
+    height: 280px;
+    column-gap: 290px;
+    justify-content: center;
+}
+
+#img-mascota-enemigo {
+    transform: scaleX(-1);
+}
+
+.vidas {
+    display: grid;
+    gap: 315px;
+    justify-content: center;
+    grid-template-columns: 280px 280px;
+}
+
+#jugador {
+    white-space: nowrap;
+    display: flex;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+#enemigo{
+    white-space: nowrap;
+}
+
+#historial {
+    display: table;
+    z-index: 20;
+    background: linear-gradient(0deg, rgb(0, 0, 0), rgb(143, 1, 1));
+    color: #EADBC8;
+    border-radius: 20px;
+    position: absolute;
+    top: 23em;
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.fila {
+    display: table-row;
+}
+
+.celda {
+    width: 97px;
+    display: table-cell;
+    padding-top: 8px;
+    text-align: center;
+    font: 105% times-new-roman;
+}
+
+.img-historial {
+    visibility: hidden;
+    scale: 10%;
+    position: absolute;
+    top: 35em;
+    background-color: rgb(22 69 101 / 79%);
+    border-radius: 100%;
+    border: 15px solid rgba(1, 165, 252, 0.9);
+    padding: 28px;
+}
+
+.vidas img:hover ~ #historial{
+    visibility: visible;
+    opacity: 100;
+}
+
+.img-historial:hover ~ #historial{
+    visibility: visible;
+    opacity: 100;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    background-color: rgba(66, 62, 39, 0.7);
+    font-family: 'Cinzel', sans-serif;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 0px;
+}
+
+#imgs-ataques {
+    display: flex;
+    scale: 20%;
+    position: absolute;
+    top: -3em;
+    z-index: 18;
+    background-color: rgb(58 58 58 / 100%);
+    flex-direction: row;
+    justify-content: center;
+    padding: 122px;
+    border-radius: 287px;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.ataques-invisibles {
+    opacity: 0
+}
+
+#texto-gracias-finales {
+    width: 80vw;
+    z-index: 5;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    font-family: "Sahitya", serif;
+    font-weight: 1000;
+    font-style: normal;
+    background: radial-gradient(#eadbc8, rgb(234 202 142));
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+    text-align: center;
+    background-clip: text;
+    -webkit-text-stroke-width: 0.2vw;
+    -webkit-text-stroke-color: black;
+}
+
+.nieve {
+    opacity: 0.5;
+    z-index: -1;
+    height: 135%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fireworks-1 {
+    opacity: 0.5;
+    z-index: 1;
+    width: 25%;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.fireworks-2 {
+    opacity: 0.5;
+    z-index: 1;
+    width: 25%;
+    position: absolute;
+    top: 82%;
+    left: 86%;
+    transform: translate(-50%, -50%);
+}
+
+.fireworks-3 {
+    opacity: 0.6;
+    z-index: 1;
+    width: 17%;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.king-cat {
+    z-index: 2;
+    width: 13%;
+    position: absolute;
+    top: 83%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.confetti-cat {
+    z-index: 2;
+    width: 10%;
+    position: absolute;
+    top: 89%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+/* COMPATIBILIDAD CELULAR */
+
+@media (max-width: 1060px) {
+
+    .titulo img {
+        scale: 150%;
+        position: relative;
+        top: -150px;
+    }
+
+    body {
+        margin-top: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #seleccionar-mascota {
+        scale: 150%;
+        position: relative;
+        top: 80px;
+    }
+
+    #seleccionar-ataque {
+        scale: 150%;
+        margin-top: -90px;
+    }
+
+    .combate {
+        scale: 90%;
+    }
+
+    #messages {
+        position: absolute;
+        top: 110px;
+    }
+
+    #mensaje-final {
+        position: absolute;
+        top: 370px;
+        left: 0px;
+    }
+
+    .tarjetas {
+        display: grid;
+        grid-template-columns: 180px 180px 180px;
+    }
+
+    #personajes-combate {
+        display: grid;
+        grid-template-columns: 100px 100px;
+        column-gap: 290px;
+        justify-content: center;
+        margin-top: 163px;
+    }
+
+    #personajes-combate-img {
+        scale: 122%;
+        width: 590px;
+        margin-left: 54px;
+        display: flex;
+        height: 280px;
+        column-gap: 0px;
+        justify-content: center;
+        margin-top: 55px;
+    }
+
+    .vidas {
+        display: grid;
+        gap: 46px;
+        justify-items: end;
+        grid-template-columns: 280px 280px;
+        margin-top: 55px;
+    }
+
+    #jugador {
+        white-space: nowrap;
+        width: 336px;
+        display: flex;
+        gap: 4px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #enemigo {
+        white-space: nowrap;
+        width: 220px;
+        display: flex;
+        gap: 4px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #historial {
+        top: 66%
+    }
+
+    .img-historial {
+        top: 80%;
+        scale: 18%;
+        margin-left: 20px;
+    } 
+
+    #contenedor-ataques {
+        scale: 172%;
+    }
+
+    #mapa {
+        height: 665px;
+        width: 890px;
+        margin-bottom: 110px;
+    }
+
+    #ver-mapa button {
+        margin: 60px;
+        scale: 200%;
+    }
+}
