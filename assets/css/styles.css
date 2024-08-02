@@ -31,6 +31,25 @@ body {
     width: 295px;
 }
 
+.next-game {
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.next-game button {
+    background-color: rgba(66, 62, 39, 0.7);
+    font-family: 'Cinzel', sans-serif;
+    color: white;
+    width: 100px;
+    height: 34px;
+    border-radius: 20px;
+}
+
 .jerarquia img {
     top: 7vw;
     left: 67vw;
